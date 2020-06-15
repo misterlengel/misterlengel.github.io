@@ -1,16 +1,18 @@
-  
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jim L</title>
-<!-- you have to add this line: -->
-	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<title>Read a CSV</title>
 </head>
 <body>
-<h1>HOME PAGE</h1>
-<p>This is my home page.</p>
-<a href="aboutus.html">about us</a>
+	<div class="csvData">
 
+	</div>
 
+	<script>
+		d3.csv("sample.csv").then(function(data) {
+			console.log(data[0]);
+		});
+
+	</script>
 </body>
 </html>
